@@ -1,1 +1,95 @@
-site_name: My Docs
+site_name: Godot FPS Template Documentation
+site_description: Documentation for Godot FPS Template
+site_url: https://finnder.github.io/godot-fps-template-docs/
+
+theme:
+  name: material
+  
+  # Color scheme with dark mode toggle
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue 
+      accent: blue
+      toggle:
+        icon: material/brightness-6
+        name: Switch to dark mode
+    
+    # Dark mode  
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue 
+      accent: blue
+      toggle:
+        icon: material/brightness-5
+        name: Switch to light mode
+
+  # Enhanced features
+  features:
+    - navigation.instant     # Instant loading
+    - navigation.tracking    # URL tracking
+    - navigation.tabs        # Top-level tabs
+    - navigation.sections    # Section navigation
+    - navigation.expand      # Expand navigation by default
+    - navigation.path        # Breadcrumb navigation
+    - navigation.indexes     # Section index pages
+    - toc.follow            # Follow table of contents
+    - toc.integrate         # Integrate TOC with navigation
+    - search.highlight      # Highlight search results
+    - search.share          # Share search results
+    - search.suggest        # Search suggestions
+    - header.autohide       # Auto-hide header on scroll
+    - content.code.copy     # Copy button for code blocks
+    - content.tabs.link     # Link content tabs
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - social:
+      cards_layout_options:
+        color: "#2D1B69"
+
+# Enhanced markdown extensions
+markdown_extensions:
+  # Syntax highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # Content enhancements
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # Navigation
+  - toc:
+      permalink: true
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Interactions: interactions.md
+
+# Footer
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Finnder/godot-fps-template-docs
