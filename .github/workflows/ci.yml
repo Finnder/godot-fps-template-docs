@@ -20,6 +20,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: python -m venv venv
       - run: source venv/bin/activate
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
