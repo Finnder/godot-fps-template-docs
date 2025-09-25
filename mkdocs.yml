@@ -86,7 +86,12 @@ markdown_extensions:
 # Navigation structure
 nav:
   - Home: index.md
-  - Interactions: interactions.md
+  - Interactions Overview: interaction/interactions.md
+  - Interaction Input Type: interaction/interaction-input-type.md
+  - Interaction Logics: interaction/interaction-logics.md
+  - Interaction Conditions: interaction/interaction-conditions.md
+  - Example Interactions: examples.md
+  - Key Mapper: keymapper.md
 
 # Footer
 extra:
