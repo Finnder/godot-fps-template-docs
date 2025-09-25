@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-,:!=\\[\\]()\"`/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])","pipeline":["stopWordFilter"]},"docs":[{"location":"interactions/","title":"Interactions","text":""},{"location":"interactions/#the-interaction-system","title":"The Interaction System","text":""}]}
