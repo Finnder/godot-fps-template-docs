@@ -1,6 +1,7 @@
 # Interaction Conditions
 - Interaction conditions, only allow the interaction to trigger once its conditions are met.
 - If you recall, the Interaction Node, checks all the conditions under the parent conditions node. Allowing the interaction to decide weather it should trigger the logics or not.
+- You can build custom **Interaction Conditions** by extending the InteractionCondition class and overriding the `check()` function.
 
 ## Base Class
 ```gdscript
@@ -43,7 +44,7 @@ func check_keys():
 ```gdscript
 extends InteractionCondition
 
-## Checks if two interactions have been triggerd, if not the interaction will not work
+## Checks if two interactions have been triggered, if not the interaction will not work
 class_name InteractionConditionAnd
 
 @export var interaction_trigger_check    : Interaction
@@ -64,7 +65,7 @@ func check_keys():
 ```
 
 ## MULTI Conditon
-- Basically just AND, but with more than 1 or more interactions as a conditional
+- Basically just AND, but with 1 or more interactions as a conditional
 ```gdscript
 extends InteractionCondition
 class_name InteractionConditionMulti

@@ -1,7 +1,9 @@
 # Interaction Logics
-- There is endless possabilities with interaction logic nodes, this is where most of your code will go when creating custom logic interactions.
-- The reason these exists is so we can maximize code reusability, and reduce code dependencies.
-- It allows us to plug and play, rather then having to dig through code all day.
+- The reason these exists is so we can **maximize code reusability**, and **reduce code dependencies**
+- It allows us to **plug and play**, rather then having to dig through code all day
+
+- You can build custom **Interaction Logics** by extending the `InteractionLogic` class and overriding the `trigger()` function
+
 
 ---
 
@@ -65,8 +67,9 @@ func trigger():
 		Console.print_info(str(interaction_body.name + "-> INTERACTION TRIGGERED"), true)
 ```
 
-## Trigger Interaction Logic Nodes
-- These nodes specialize in triggering other interactions, either by id, or node reference.
+## REMOTE Trigger Interaction Logic Nodes
+- These nodes specialize in triggering other interactions, either by id, or node reference remotely. You can create chains of interactions.
+- EX: A Interaction -> B Interaction -> C Interaction
 
 ### InteractionLogicTriggerByRefs
 ```gdscript
