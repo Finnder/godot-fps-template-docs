@@ -1,10 +1,20 @@
 # Interaction Input Type Node
-- The input type node will handle all user input relating to the interaction.
+- The input type node will handle all user input related to the interaction.
+- Like key presses, stepping into an area, looking at the interaction, etc.
+
+![Input Node](../assets/interaction-input-node.png)
+
+### How to use
+1. In the node menu simply search `InteractionInput` and you will see a few options pop up.
+2. The most common one you'll use is the `key press` input 
 
 
-![Alt text](../assets/interaction-input-node.png)
+### Input Types
+![Input Types](../assets/input-types.png)
 
-### Features
-- You can also change the key that you use to interact to trigger the interaction, by default in the project the keys are F and Left-Click
-- **Supports** hold interactions, meaning hold key for x amount of time, until the player triggers the Interaction.
-- **Supports** area interactions, meaning you can assign an area 3d node, so you can trigger based on if and entity or player enters or exits the area.
+#### Area Interaction Input
+![Input Types](../assets/area-input.png)
+
+- Takes an `Area3D` as an argument, this will represent the area the player needs to step into to trigger the interaction
+- You can make it trigger on enter or exit of the area
+- Also an optional `Only Player Can Trigger` conditional, if you want other entities to trigger this interaction just uncheck it
