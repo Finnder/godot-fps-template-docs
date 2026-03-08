@@ -90,6 +90,7 @@ nav:
   - Interaction Input Type: interaction/interaction-input-type.md
   - Interaction Logics: interaction/interaction-logics.md
   - Interaction Conditions: interaction/interaction-conditions.md
+  - Walls: interaction/walls.md
   - Example Interactions: examples.md
   - Key Mapper: keymapper.md
 
